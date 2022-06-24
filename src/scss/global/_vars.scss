@@ -1,0 +1,16 @@
+// ************************** Breakpoints ********************************
+
+$minwidth: 320px;
+$mw: 1170; //put here max width of content
+$md1: $mw+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// ************************** Fonts ********************************
+$fontfamily: monospace,
+monospace;
+
+// ************************** Animations ******************************
+
+$maintransition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;

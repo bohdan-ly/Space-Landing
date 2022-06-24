@@ -1,0 +1,58 @@
+// **************************   SCSS   *****************************
+
+@import './global/vars';
+@import './global/colors';
+@import './global/animations';
+@import './base/normalize';
+@import './global/libs';
+@import './components/navbar';
+@import './components/accordion';
+@import './components/tabs';
+@import './components/modal';
+@import './sections/header';
+@import './sections/about';
+@import './sections/careers';
+@import './sections/tech';
+@import './sections/reviews';
+@import './sections/brands';
+@import './sections/info';
+@import './sections/footer';
+
+@import './global/global';
+
+@media (max-width: 768px) {}
+
+// **************************   Default style   *****************************
+
+.container {
+    max-width: $mw + px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.section__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 3.1em;
+    text-align: center;
+    color: var(--primary-color);
+}

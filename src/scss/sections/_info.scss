@@ -1,0 +1,30 @@
+.section__info {
+    background: var(--secondary);
+    padding: 100px 0;
+
+    .info__title {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.2em;
+
+        @media (max-width: 768px) {
+            font-size: 1.5em;
+        }
+
+    }
+
+
+
+
+    .info__text {
+        font-weight: 500;
+        max-width: 600px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .info__rabbit {
+        margin: 65px auto 0 auto;
+        display: block;
+    }
+}

@@ -1,0 +1,33 @@
+.section__about {
+    padding: 130px 0;
+
+    @media (max-width: 768px) {
+        padding: 75px 0;
+    }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+            text-align: center;
+            color: var(--secondary-color);
+            margin-top: 20px;
+            max-width: 680px;
+
+            @media (max-width: 768px) {
+                max-width: 80%;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.section__brands {
+    padding: 100px 0;
+
+    .brands {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .brand__item {
+            margin: 25px;
+            width: 100px;
+        }
+    }
+}

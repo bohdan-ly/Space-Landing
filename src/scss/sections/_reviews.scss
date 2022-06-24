@@ -1,0 +1,93 @@
+.section__reviews {
+    background: var(--secondary);
+    padding-bottom: 35px;
+
+    .swiper-wrapper {
+        padding: 75px 0;
+    }
+
+    .review__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .review__logo {
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 150px;
+                max-height: 150px;
+            }
+        }
+
+        .review__text {
+            text-align: center;
+            max-width: 700px;
+            margin-top: 40px;
+            font-weight: 500;
+            font-size: 1.2em;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 127px;
+                height: 112px;
+                background: url('@assets/img/quotes.svg') no-repeat;
+                left: 20px;
+                top: -33px;
+                filter: grayscale(1);
+            }
+        }
+
+        .review__author {
+            text-align: center;
+            font-weight: 500;
+            margin-top: 30px;
+            font-size: 1em;
+            max-width: 160px;
+        }
+    }
+
+    .slider__arrow {
+        position: absolute;
+        width: 25px;
+        z-index: 11;
+        outline: none;
+        cursor: pointer;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+
+        &.prev__arrow {
+            top: 50%;
+            left: 20px;
+            transform: translate(-50%) rotate(180deg);
+        }
+
+        &.next__arrow {
+            top: 50%;
+            right: 20px;
+            transform: translate(-50%);
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+            box-sizing: border-box;
+            height: 8px;
+            width: 8px;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+
+            &.swiper-pagination-bullet-active {
+                background: var(--primary-color);
+            }
+        }
+    }
+}

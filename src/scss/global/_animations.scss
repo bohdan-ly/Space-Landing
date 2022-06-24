@@ -1,0 +1,19 @@
+@keyframes rotate {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 610px 0px;
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 610px 0px;
+    }
+}

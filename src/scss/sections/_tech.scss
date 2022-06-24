@@ -1,0 +1,14 @@
+.section__tech {
+    padding-bottom: 135px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 75px;
+
+    }
+
+    .tech__title {
+        margin-top: 50px;
+        border-top: .5px solid var(--secondary-color);
+    }
+
+}
